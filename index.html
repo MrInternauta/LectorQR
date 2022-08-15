@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vincular dispositivo</title>
+  
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="icon" type="image/png" href="./assets/ICONO.png" />
+  <link rel="stylesheet" href="./css/animate.css">
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styleQR.css">
+  <script src="./js/qrcode.js" defer></script>
+  <script src="./js/socket.io.js"></script>
+<!-- Bootstrap core CSS-->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div style="width: 100%; background: #fafafa;">
+    <div style="
+          display: none;
+          font-size: 1px;
+          line-height: 1px;
+          max-height: 0px;
+          max-width: 0px;
+          overflow: hidden;
+          mso-hide: all;
+          font-family: sans-serif;
+        "></div>
+    <div style="max-width: 600px; margin: auto;">
+      <!-- header -->
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
+        <tbody>
+          <tr>
+            <td style="padding: 20px 0; text-align: center;"></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
+        <tbody>
+          <tr>
+            <td bgcolor="#17022D" align="center" style="
+                  font-family: sans-serif;
+                  color: #ffffff;
+                  font-size: 15px;
+                  mso-height-rule: exactly;
+                  line-height: 20px;
+                ">
+              <img src="./assets/ICONO.png" width="200" alt="alt_text" border="0" style="
+                    width: 100%;
+                    max-width: 200px;
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                  " /><br />
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px;">
+              <br />
+
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px;">
+              <div class="card-body">
+                <div class="table-responsive">
+                  <div style=" margin: 0 auto; margin-top: 25px;">
+                    <h1>Escanear código para vincular dispositivo</h1>
+                    <div class="main" id="main">
+                        <div class="qrdiv hide" id="qrdiv">
+                            <div class="qrcode" id="qrcode"></div>
+                        </div>
+                        <h2 id="vinculado" style="color: red;">Dispositivo vinculado</h2>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" style="
+                  font-family: sans-serif;
+                  color: #000000;
+                  font-size: 15px;
+                  mso-height-rule: exactly;
+                  line-height: 20px;
+                "></td>
+          </tr>
+          <tr>
+            <td height="40" style="font-size: 0; line-height: 0;"></td>
+          </tr>
+          <tr>
+            <td bgcolor="#17022D" align="center" style="
+                  font-family: sans-serif;
+                  color: #ffffff;
+                  font-size: 15px;
+                  mso-height-rule: exactly;
+                  line-height: 20px;
+                "></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- footer -->
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
+        <tbody>
+          <tr>
+            <td style="
+                  padding: 40px 10px;
+                  width: 100%;
+                  font-size: 12px;
+                  font-family: sans-serif;
+                  mso-height-rule: exactly;
+                  line-height: 18px;
+                  text-align: center;
+                  color: #888888;
+                ">
+              © 2022 Powered by Felipe Ramirez
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
